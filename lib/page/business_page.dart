@@ -13,7 +13,7 @@ class _BusinessPageState extends State<BusinessPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Business")),
+      appBar: AppBar(title: Text("Business"), brightness: Brightness.dark),
       body: Text("Business"),
     );
   }
