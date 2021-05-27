@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:flutterexample/page/business_page.dart';
 import 'package:flutterexample/page/home/home_page.dart';
+import 'package:flutterexample/page/map_page.dart';
 import 'package:flutterexample/page/settings_page.dart';
 
 class MainNavigationPage extends StatefulWidget {
@@ -17,7 +17,7 @@ class _MainNavigationPageState extends State<MainNavigationPage> {
   int _selectedIndex = 0;
   static List<Widget> _widgetOptions = <Widget>[
     HomePage(),
-    BusinessPage(),
+    MapPage(),
     SettingsPage(),
   ];
 
@@ -40,8 +40,8 @@ class _MainNavigationPageState extends State<MainNavigationPage> {
             label: AppLocalizations.of(context)!.home,
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.business),
-            label: AppLocalizations.of(context)!.business,
+            icon: Icon(Icons.map),
+            label: AppLocalizations.of(context)!.map,
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.settings),
